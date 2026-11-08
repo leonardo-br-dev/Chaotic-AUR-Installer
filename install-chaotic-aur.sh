@@ -25,7 +25,7 @@ else
 sudo echo "[chaotic-aur]" | sudo tee -a /etc/pacman.conf > /dev/null
 sudo echo "Include = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf > /dev/null
 fi
-echo "Atualizando o sistema"
+echo "Atualizando o sistema... [4/4]"
 sudo pacman -Syyu
 
 elif [[ $resposta == "N" ]] || [[ $resposta == "n" ]]; then
